@@ -1,0 +1,273 @@
+h2, h4 {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+article > p {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+@media screen and (min-width: 429px){
+    body {
+        background-color: #ffd265;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h4, article > p {
+        font-size: 1.2em;
+    }
+
+    main > div {
+        background-color: #FD7474;
+        border-radius: 25px;
+    }
+
+    main >  div > h2, main > div > div {
+        background-color: #C53D3D;
+        border-radius: 25px;
+    }
+
+    main > section {
+        background-color: #F7A065;
+        border-radius: 25px;
+        margin: 25px
+    }
+
+    .icone {
+        width: 37px;
+        height: 37px;
+    }
+
+    section > div > div, section > article, #journal, #groupe {
+        background-color: #BF7C4E;
+        border-radius: 25px;
+    }
+
+    #cadre-moy-glob {
+        margin: 25px;
+    }
+
+    #cadre-moy-glob > .moy-globale {
+        padding: 20px 100px;
+        margin-left: 30px;
+    }
+
+    main > div > h2 {
+        margin-left: 200px;
+    }
+
+    main > div > div {
+        margin-top: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    section > #groupe {
+        padding: 20px;
+    }
+
+    #etoiles-moy {
+        margin-right: 25px;
+        margin-bottom: 20px;
+    }
+
+    section > div > h2 {
+        margin-left: 2%;
+    }
+
+    section > div > span {
+        align-items: center;
+    }
+
+    span {
+        margin-top: 1%;
+        width: 80%;
+    }
+
+    #groupe {
+        height: 65px;
+        width: 65px;
+        background-color: #BF7C4E;
+        border-radius: 25px;
+        padding: 20px;
+        margin: 18px;
+    }
+
+
+    .notes > p {
+        height: 15px;
+    }
+
+    /*-------------*/
+    /*   FLEXBOX   */
+    /*-------------*/
+
+    /*
+    main > section > div {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: 25px;
+        margin-top: 25px;
+    }
+    */
+    section > div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    section > div > div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .avis {
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        margin-bottom: 1%;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-top: 0.5%;
+    }
+
+    .avis > p{
+        padding: 20px;
+    }
+
+    .avis > h4 img p {
+        margin: 10%
+    }
+
+    #cadre-moy-glob {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-self: center;
+    }
+
+    #entete {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: start;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .test {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+
+    }
+
+    section > div > div {
+        width: 85%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        margin-top: 1%;
+        padding: 2%;
+        margin-right: 2%;
+    }
+}
+
+@media screen and (max-width: 428px){
+    body {
+        background-color: #ffd265;
+    }
+
+    .icone {
+        width: 30px;
+        height: 30px;
+    }
+
+    main > div {
+        background-color: #FD7474;
+        border-radius: 25px;
+        padding-bottom: 2%;
+    }
+
+    main > div > h2 {
+        text-align: center;
+        padding-top: 0.5%;
+    }
+
+    main > div > div{
+        background-color: #C53D3D;
+        border-radius: 25px;
+        margin: 2.5%;
+        padding-left: 25%;
+
+    }
+
+    main > section {
+        background-color: #F7A065;
+        border-radius: 25px;
+        margin-top: 5%;
+    }
+
+    .test {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .test > img {
+        background-color: #BF7C4E;
+        border-radius: 25px;
+        padding: 20px;
+        margin-top: 10%;
+    }
+
+    .test > div {
+        background-color: #BF7C4E;
+        border-radius: 25px;
+        padding: 0 5%;
+        margin-top: 5%;
+        text-align: center;
+    }
+
+    .moy-gen {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+
+    }
+
+    .moy-gen > span {
+        margin-top: 5%;
+    }
+
+    article {
+        background-color: #BF7C4E;
+        border-radius: 25px;
+        padding: 5%;
+        margin: 5%;
+    }
+
+    section > p {
+        height: 7.5px;
+    }
+}

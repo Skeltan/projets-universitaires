@@ -1,0 +1,461 @@
+body{
+    background-color: #ffd265;
+}
+
+main{
+    color: black;
+}
+
+main > article{
+    margin: 40px 30px;
+}
+
+h2 {
+    font-family: "League Spartan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+p, figcaption{
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+#general{
+    background-color: #fd7474;
+    border-radius: 25px;
+    padding: 1px;
+}
+
+h2{
+    margin: 10px;
+}
+
+#general h2{
+    display: flex;
+    justify-content: center;
+    padding: 5px 35%;
+    border-radius: 25px;
+    background-color: #c53d3d;
+}
+
+#general h3{
+    font-size: 2em;
+}
+
+#general section{
+    background-color: #c53d3d;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+#general section img{
+    width: 65px;
+    height: 65px;
+}
+
+#general > div > figure > img {
+    width: 100%;
+}
+
+#general div{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-basis: 1280px ;
+}
+
+#general > div > section{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#acteur{
+    padding: 1px;
+    border-radius: 25px;
+    background-color: #636363;
+    color: white;
+}
+
+#acteur section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#acteur section figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-shrink: 0;
+    border-radius: 25px;
+    padding: 5px;
+    background-color: #3d3d3d;
+}
+
+#acteur section figure figcaption{
+    margin: 5px;
+    padding: 30px;
+}
+
+#walter{
+    width: 20em;
+}
+
+#walter img{
+    width: 75%;
+}
+
+#aaron img{
+    width: 95%;
+}
+
+#anna img{
+    width: 60%;
+}
+
+#dean{
+    width: 25em;
+}
+
+#dean img{
+    width: 75%;
+}
+
+#rj img{
+    width: 65%;
+}
+
+#acteur h2{
+    display: flex;
+    justify-content: center;
+    padding: 5px 35%;
+    border-radius: 25px;
+    background-color: #3d3d3d;
+}
+
+#recompense{
+    padding: 1px;
+    border-radius: 25px;
+    background-color: #f7a065;
+}
+
+#recompense section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#recompense figure{
+    background-color: #bf7c4e;
+    margin: 5px 10px;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+#emmy img{
+    width: 80%;
+}
+
+#golden img{
+    width: 100%;
+}
+
+#recompense h2{
+    display: flex;
+    justify-content: center;
+    padding: 5px 35%;
+    border-radius: 25px;
+    background-color: #bf7c4e;
+}
+
+header , footer{
+    background-color: #e0b34a;
+    font-family: "league spartan", Arial;
+    font-size: 32px;
+}
+
+header{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+header img{
+    width: 334px;
+    height: 100px;
+}
+
+header > nav > a > img, header > div > nav > a > img, header > div > section > img{
+    height: 65px;
+    width: 65px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+header > nav >  a > p,header > div > nav > a > p ,header > div > section > p{
+    margin-right: 5px;
+    font-weight: bolder;
+    color: black;
+}
+
+header > nav, header > div > nav{
+    background-color: #fd7474;
+    border-radius: 25px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header > nav > a , header > div > nav > a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+header div section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+header div section{
+    background-color: #fff;
+    border-radius: 25px;
+    padding-right: 100px;
+    margin-right: 10px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    font-weight: bolder;
+    margin: 10px 15%;
+}
+
+#court{
+    width: 110%;
+}
+
+#barre{
+    height: 100px;
+    width: 54.2px;
+}
+
+#barre_tel{
+    height: 50px;
+    width: 27.1px;
+}
+
+@media screen and (min-width: 429px){
+
+    #general div{
+        justify-content: space-between;
+    }
+
+    #general div section{
+        padding: 10px;
+    }
+
+    header{
+        justify-content: center;
+    }
+    
+    #court{
+        display: none;
+    }
+
+    #complet{
+        position: absolute;
+        left: 0;
+    }
+
+    #barre_tel{
+        display: none;
+    }
+    #barre{
+        height: 100px;
+        width: 54.2px;
+    }
+
+    header div{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    header div section{
+        position: absolute;
+        right: 0;
+    }
+
+    header div nav{
+        border-radius: 0 25px 25px 0;
+    }
+
+    header nav{
+        border-radius: 25px 0 0 25px;
+    }
+
+}
+
+@media screen and (max-width: 428px){
+
+    #general > div > section{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #general section img{
+        width: 30px;
+        height: 30px;
+    }
+
+    #general section h3{
+        margin: 10px;
+        font-size: 1em;
+    }
+
+    #general div{
+        flex-wrap: wrap;
+    }
+
+    #general div figure{
+        width: 90%;
+    }
+
+    #general div figure img{
+        width: 90%;
+    }
+
+    #walter{
+        width: 10em;
+    }
+    
+    #walter img{
+        width: 75%;
+    }
+    
+    #aaron img{
+        width:70%;
+    }
+
+    #aaron{
+        width: 70%;
+    }
+    
+    #anna img{
+        width: 60%;
+    }
+
+    #anna {
+        width: 70%;
+    }
+    
+    #dean{
+        width: 70%;
+    }
+    
+    #dean img{
+        width: 75%;
+    }
+    
+    #rj{
+        width: 70%;
+    }
+
+    #rj img{
+        width: 65%;
+    }
+
+    #emmy img{
+        width: 100%;
+    }
+
+    #golden{
+        width: 65%;
+    }
+
+    #complet{
+        display: none;
+    }
+
+    #court{
+        display: flex;
+        flex-shrink: 0;
+        height: 75px;
+        width: 75px;
+    }
+    
+    header{
+        justify-content: space-between;
+    }
+
+    header div{
+        background-color: #fd7474;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        border-radius: 25px;
+    }
+
+    header nav #barre{
+        height: 30px;
+        width: 16.26px;
+    }
+
+    header nav a p , header div nav a p, header div section p{
+        display: none;
+    }
+
+    header nav a img, header div nav a img, header div section img{
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+
+    header div section{
+        background-color: #fd7474;
+        padding-right: 0;
+        margin-right: 0;
+        
+    }
+
+    header div nav #barre{
+        display: none;
+    }
+
+    footer p{
+        font-size: 16px;
+        margin: 10px 10%;
+    }
+
+    footer #barre{
+        height: 50px;
+        width: 27.1px;
+    }
+}

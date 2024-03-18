@@ -1,0 +1,195 @@
+header , footer{
+    background-color: #e0b34a;
+    font-family: "league spartan", Arial;
+    font-size: 32px;
+}
+
+header{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+header img{
+    width: 334px;
+    height: 100px;
+}
+
+header > nav > a > img, header > div > nav > a > img, header > div > section > img{
+    height: 65px;
+    width: 65px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+header > nav >  a > p,header > div > nav > a > p ,header > div > section > p{
+    margin-right: 5px;
+    font-weight: bolder;
+    color: black;
+}
+
+header > nav, header > div > nav{
+    background-color: #fd7474;
+    border-radius: 25px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header > nav > a , header > div > nav > a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-decoration: none;
+}
+
+header section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+header div section{
+    background-color: #fff;
+    border-radius: 25px;
+    padding-right: 100px;
+    margin-right: 10px;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    font-weight: bolder;
+    margin: 10px 15%;
+}
+
+#court{
+    width: 110%;
+}
+
+#barre{
+    height: 100px;
+    width: 54.2px;
+}
+
+#barre_tel{
+    height: 50px;
+    width: 27.1px;
+}
+
+@media screen and (min-width: 429px){
+    header{
+        justify-content: center;
+    }
+    
+    #court{
+        display: none;
+    }
+
+    #complet{
+        position: absolute;
+        left: 0;
+    }
+
+    #barre_tel{
+        display: none;
+    }
+    #barre{
+        height: 100px;
+        width: 54.2px;
+    }
+
+    header div{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    header section{
+        position: absolute;
+        right: 0;
+    }
+
+    header div nav{
+        border-radius: 0 25px 25px 0;
+    }
+
+    header nav{
+        border-radius: 25px 0 0 25px;
+    }
+
+}
+
+@media screen and (max-width: 428px){
+
+    #complet{
+        display: none;
+    }
+
+    #court{
+        display: flex;
+        flex-shrink: 0;
+        height: 75px;
+        width: 75px;
+    }
+    
+    header{
+        justify-content: space-between;
+    }
+
+    header div{
+        background-color: #fd7474;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        border-radius: 25px;
+    }
+
+    header nav #barre{
+        height: 30px;
+        width: 16.26px;
+    }
+
+    header nav a p , header div nav a p, header div section p{
+        display: none;
+    }
+
+    header nav a img, header div nav a img, header div section img{
+        height: 30px;
+        width: 30px;
+        margin-right: 10px;
+        margin-left: 5px;
+    }
+
+    header div section{
+        background-color: #fd7474;
+        padding-right: 0;
+        margin-right: 0;
+        
+    }
+
+    header div nav #barre{
+        display: none;
+    }
+
+    footer p{
+        font-size: 16px;
+        margin: 10px 10%;
+    }
+
+    footer #barre{
+        height: 50px;
+        width: 27.1px;
+    }
+}
