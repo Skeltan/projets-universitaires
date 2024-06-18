@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vue.CtrlCreerSpectacle">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Label minWidth="110.0" text="Nom : " />
+            <TextField fx:id="txtNom" prefWidth="171.0" />
+            <Label alignment="CENTER_RIGHT" minWidth="100.0" text="Catégorie : " />
+            <ChoiceBox fx:id="chCategorie" prefWidth="150.0" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+         <children>
+            <Label minWidth="110.0" text="Artiste : " />
+            <TextField fx:id="txtArtiste" prefWidth="171.0" />
+            <Label alignment="CENTER_RIGHT" minWidth="100.0" text="Genre : " />
+            <ChoiceBox fx:id="chGenre" prefWidth="150.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Label minWidth="110.0" text="Tarif : " />
+            <TextField fx:id="txtTarif" prefWidth="171.0" />
+            <Label alignment="CENTER_RIGHT" minWidth="100.0" text="Max Spec. : " />
+            <TextField fx:id="txtMaxSpec" prefWidth="150.0" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Label minWidth="110.0" text="Date de début : " />
+            <DatePicker fx:id="dateDebut" prefWidth="198.0" />
+            <Label alignment="CENTER_RIGHT" minWidth="75.0" text="Durée : " />
+            <TextField fx:id="txtDuree" prefWidth="150.0" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Label minWidth="110.0" text="Date de fin : " />
+            <DatePicker fx:id="dateFin" prefWidth="198.0" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="300.0">
+               <children>
+                  <ImageView fitHeight="52.0" fitWidth="311.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Ratio.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="300.0" spacing="20.0">
+               <children>
+                  <Button fx:id="bnValider" defaultButton="true" maxHeight="25.0" maxWidth="100.0" minHeight="25.0" minWidth="100.0" mnemonicParsing="false" onAction="#clicValider" prefHeight="25.0" prefWidth="100.0" text="Valider" />
+                  <Button fx:id="bnAnnuler" cancelButton="true" maxHeight="25.0" maxWidth="100.0" minHeight="25.0" minWidth="100.0" mnemonicParsing="false" onAction="#clicAnnuler" prefHeight="25.0" prefWidth="100.0" text="Annuler" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </children>
+</VBox>

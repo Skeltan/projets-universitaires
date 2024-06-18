@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <tabs>
+    <Tab text="Spectacles">
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <bottom>
+                  <HBox prefHeight="50.0" prefWidth="600.0" spacing="20.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox prefHeight="30.0" prefWidth="1368.0" spacing="20.0">
+                           <children>
+                              <Button fx:id="bnAjouter" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Ajouter" />
+                              <Button disable="true" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Modifier" />
+                              <Button disable="true" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Supprimer" />
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="20.0" right="20.0" />
+                           </HBox.margin>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT" prefHeight="50.0" prefWidth="794.0">
+                           <children>
+                              <Button fx:id="bnFermer" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Fermer">
+                                 <HBox.margin>
+                                    <Insets right="20.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </bottom>
+               <center>
+                  <TableView prefHeight="467.0" prefWidth="1048.0" BorderPane.alignment="CENTER">
+                    <columns>
+                      <TableColumn editable="false" prefWidth="249.0" resizable="false" text="Nom" />
+                      <TableColumn editable="false" minWidth="0.0" prefWidth="145.0" resizable="false" text="Artiste" />
+                        <TableColumn editable="false" prefWidth="102.0" resizable="false" text="Tarif" />
+                        <TableColumn editable="false" prefWidth="100.0" resizable="false" text="Début" />
+                        <TableColumn editable="false" prefWidth="114.0" resizable="false" text="Fin" />
+                        <TableColumn editable="false" prefWidth="107.0" resizable="false" text="Durée" />
+                        <TableColumn editable="false" prefWidth="126.0" resizable="false" text="Catégorie" />
+                        <TableColumn editable="false" prefWidth="117.0" resizable="false" text="Genre" />
+                        <TableColumn editable="false" prefWidth="99.0" resizable="false" text="Max. Spec." />
+                    </columns>
+                     <BorderPane.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </BorderPane.margin>
+                  </TableView>
+               </center>
+            </BorderPane>
+         </content>
+    </Tab>
+    <Tab text="Représentations">
+         <content>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <bottom>
+                  <HBox alignment="CENTER_LEFT" prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox prefHeight="50.0" prefWidth="1059.0" spacing="20.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Ajouter" />
+                              <Button disable="true" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Modifier" />
+                              <Button disable="true" mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Supprimer" />
+                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" text="Afficher Stats.">
+                                 <HBox.margin>
+                                    <Insets left="120.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="20.0" left="20.0" right="20.0" />
+                           </HBox.margin>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT" prefHeight="50.0" prefWidth="388.0">
+                           <children>
+                              <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Fermer" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets right="20.0" />
+                     </padding>
+                  </HBox>
+               </bottom>
+               <center>
+                  <TableView prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <columns>
+                      <TableColumn editable="false" prefWidth="438.0" resizable="false" sortable="false" text="Nom du spectacle" />
+                      <TableColumn editable="false" minWidth="0.0" prefWidth="105.0" resizable="false" text="Début" />
+                        <TableColumn editable="false" prefWidth="109.0" resizable="false" text="Fin" />
+                        <TableColumn editable="false" prefWidth="109.0" resizable="false" text="Durée" />
+                        <TableColumn editable="false" prefWidth="138.0" resizable="false" text="Catégorie" />
+                        <TableColumn editable="false" prefWidth="150.0" resizable="false" text="Genre" />
+                        <TableColumn editable="false" prefWidth="110.0" resizable="false" text="Max. Spec." />
+                    </columns>
+                     <BorderPane.margin>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </BorderPane.margin>
+                  </TableView>
+               </center>
+            </BorderPane>
+         </content>
+    </Tab>
+  </tabs>
+</TabPane>
